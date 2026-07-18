@@ -156,6 +156,7 @@ def menu_principal(inventario):
 def main():
     mi_inventario = Inventario()
     menu_principal(mi_inventario)
+    input() 
     input("\nPresiona Enter para salir...")
 
 
