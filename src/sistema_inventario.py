@@ -154,10 +154,13 @@ def menu_principal(inventario):
             print("Opción inválida. Por favor, intenta de nuevo.")
         
 def main():
-    mi_inventario = Inventario()
-    menu_principal(mi_inventario)
-    input() 
-    input("\nPresiona Enter para salir...")
+    try:
+        mi_inventario = Inventario()
+        menu_principal(mi_inventario)
+        input("\nPresiona Enter para salir...")
+    except Exception as e:
+        print("\n=== ¡EL PROGRAMA SE CERRÓ POR UN ERROR! ===")
+        input("\nPresiona Enter para cerrar la ventana...") 
 
 
 if __name__ == '__main__':
