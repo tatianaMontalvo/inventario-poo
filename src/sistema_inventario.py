@@ -1,3 +1,9 @@
+"""
+Sistema de inventario con POO
+Autor: Tatiana Montalvo
+Fecha: 18 de julio 2026
+"""
+
 class Producto:
     """
     Clase que contiene los atributos y metodos disponibles del producto
@@ -150,6 +156,7 @@ def menu_principal(inventario):
 def main():
     mi_inventario = Inventario()
     menu_principal(mi_inventario)
+    input("\nPresiona Enter para salir...")
 
 
 if __name__ == '__main__':
