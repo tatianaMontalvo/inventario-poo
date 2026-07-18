@@ -159,7 +159,7 @@ def main():
         menu_principal(mi_inventario)
         input("\nPresiona Enter para salir...")
     except Exception as e:
-        print("\n=== ¡EL PROGRAMA SE CERRÓ POR UN ERROR! ===")
+        print(f"Ocurrió un error: {e}")
         input("\nPresiona Enter para cerrar la ventana...") 
 
 
